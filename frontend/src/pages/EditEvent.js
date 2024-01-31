@@ -4,7 +4,7 @@ import EventForm from '../components/EventForm'
 
 function EditEventPage() {
     const data = useRouteLoaderData('event-detail') // use this with the id of the heigher level route to access its loader
-    return <EventForm event={data.event}/>
+    return <EventForm method='patch' event={data.event}/>
 }
 
 export default EditEventPage;
